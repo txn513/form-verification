@@ -3,6 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>表单验证</title>
+    <style>
+        input {
+            outline: none;
+        }
+        #strs {
+            width: 200px;
+            height: 20px;
+            border: 1px solid #000;
+            box-shadow: inset 1px 1px 1px #888;
+            padding-left: 10px;
+        }
+        #isContent {
+            height: 20px;
+            border: none;
+            background-color: #ff7a19;
+            color: #fff;
+            box-shadow: 1px 1px 1px #888;
+        }
+        #isContent:hover {
+            background-color: #ff5939;
+        }
+        #isContent:active {
+            background-color: #df2e44;
+            box-shadow: none;
+        }
+    </style>
     <script>
         window.onload = function () {
             var _isContent = document.getElementById('isContent');
