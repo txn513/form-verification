@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <script>
+        window.onload = function () {
+            var _isContent = document.getElementById('isContent');
+            var _strs = document.getElementById('strs');
+
+            _isContent.onclick = function (){
+                if(!_strs.value){
+                    alert('您的输入为空');
+                }
+                else {
+                    alert('您的输入不为空');
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>验证是否输入</h2>
+    <input type="text" id="strs">
+    <input type="button" id="isContent" value="验证是否为空" >
+
+</body>
+</html>
